@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+    defaultConfig {
+        applicationId "mtaxi.cumonywa.com.mtaxi"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Firebase Authentication
+    compile 'com.google.firebase:firebase-auth:16.0.1'
+    compile 'com.google.firebase:firebase-core:16.0.1'
+    compile 'com.firebase:geofire-android:2.1.1'
+    compile 'com.google.firebase:firebase-storage:16.0.1'
+    compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+    compile 'com.google.firebase:firebase-database:16.0.1'
+    // Google Sign In SDK (only required for Google Sign In)
+    compile 'com.google.android.gms:play-services-auth:15.0.1'
+    // Firebase UI
+    // Used in FirebaseUIActivity.
+    // compile 'com.firebaseui:firebase-ui-auth:4.0.0'
+    // Facebook Android SDK (only required for Facebook Login)
+    // Used in FacebookLoginActivity.
+    compile 'com.facebook.android:facebook-login:4.32.0'
+    //compile 'com.android.support:customtabs:27.1.1'
+    //compile 'com.android.support:appcompat-v7:26.+'
+    //compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.0.1'
+    compile 'com.android.support:design:26.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+    compile 'com.github.jd-alexander:library:1.1.0'
+
+    compile 'com.github.bumptech.glide:glide:4.6.1'
+    compile 'com.github.bumptech.glide:compiler:4.6.1'
+
+    compile 'com.google.android.gms:play-services-maps:15.0.1'
+    compile 'com.google.android.gms:play-services-location:15.0.1'
+    compile 'com.google.android.gms:play-services-places:15.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    /*compile 'com.google.android.gms:play-services-maps:11.6.0'
+        compile 'com.google.android.gms:play-services-location:11.6.0'*/
+}
+apply plugin: 'com.google.gms.google-services'
