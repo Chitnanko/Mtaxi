@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtDriverName"
+            style="@style/textV_Style"
+            android:text="Driver Name"/>
+
+        <TextView
+            android:id="@+id/txtDriverCarType"
+            style="@style/textV_Style"
+            android:text="Car Type" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            style="@style/textV_Style"
+            android:text="Prize" />
+
+        <TextView
+            android:id="@+id/txtStartPlace"
+            style="@style/textV_Style"
+            android:text="Start Place"
+            android:drawableLeft="@mipmap/ic_pickup"/>
+
+        <TextView
+            android:id="@+id/txtPlaceEnd"
+            style="@style/textV_Style"
+            android:text="End Place"
+            android:drawableLeft="@mipmap/ic_pickup"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

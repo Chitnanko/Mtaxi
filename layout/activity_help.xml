@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0000"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btncallPhone"
+        style="@style/button_style"
+        android:background="@drawable/bstyle"
+        android:text="Call Server"
+        android:textColor="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/button_style"
+        android:id="@+id/btnWebsite"
+        android:layout_below="@id/btncallPhone"
+        android:background="@drawable/bstyle"
+        android:text="Facebook Page"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
