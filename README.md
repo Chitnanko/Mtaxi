@@ -13,3 +13,10 @@ book taxi
 Driver use driver app<br>
 driver can get order form this app
 driver see pickup location
+
+#Dashboard
+admin use dashboard app to monitor driver and user<br>
+monitor dirver location<br>
+monitor trip<br>
+monitor active job<br>
+
